@@ -12,14 +12,14 @@ const skills = [
   { name: 'MongoDB', },
   { name: 'React Native', },
   { name: 'Git', },
-   { name: 'SQLite',},
+   { name: 'SQLite DB',},
   { name: 'Firebase', },
   { name: 'jQuery',},
 ];
 
 const Resume = () => {
   return (
-    <section id="resume" className="py-16 bg-gradient-to-b from-black to-blue-900 text-white ">
+    <section id="resume" className="py-16 px-3 bg-gradient-to-b from-black to-blue-900 text-white ">
       <div className="container mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold text-center mb-8 text-gradient">My Resume</h2>
         
