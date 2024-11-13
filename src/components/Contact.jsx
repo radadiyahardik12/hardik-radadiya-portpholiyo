@@ -1,4 +1,8 @@
 import React from 'react';
+import FaceBookIcon from '../assets/FaceBookIcon';
+import InstagramIcon from '../assets/InstagramIcon';
+import LinkinIcon from '../assets/LinkinIcon';
+import GitHubIcon from '../assets/GitHubIcon';
 // import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Contact = () => {
@@ -18,19 +22,19 @@ const Contact = () => {
         <div className="flex justify-center mt-6 space-x-6">
           <a href="https://linkedin.com" className="text-gray-400 hover:text-blue-600">
             {/* <FaLinkedin size={30} /> */}
-            FaLinkedin
+            <LinkinIcon />
           </a>
           <a href="https://github.com" className="text-gray-400 hover:text-gray-500">
             {/* <FaGithub size={30} /> */}
-            FaGithub
+            <GitHubIcon />
           </a>
           <a href="https://facebook.com" className="text-gray-400 hover:text-blue-600">
             {/* <FaFacebook size={30} /> */}
-            FaFacebook
+            <FaceBookIcon/>
           </a>
           <a href="https://instagram.com" className="text-gray-400 hover:text-pink-500">
             {/* <FaInstagram size={30} /> */}
-            FaInstagram
+            <InstagramIcon />
           </a>
         </div>
       </div>

@@ -1,20 +1,26 @@
 import React from 'react';
 import GitHubIcon from '../assets/GitHubIcon';
+import HtmlIcon from '../assets/HtmlIcon';
+import ReactJsIcon from '../assets/ReactJsIcon';
+import TailwindIcon from '../assets/TailwindIcon';
+import MongoDB from '../assets/MongoDB';
+import NodeJSIcon from '../assets/NodeJSIcon';
+import ReduxIcon from '../assets/ReduxIcon';
+import JavaScriptIcon from '../assets/JavaScriptIcon';
+import SqliteIcon from '../assets/SqliteIcon';
 // import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaDatabase, FaGit, FaJsSquare } from 'react-icons/fa';
 
 const skills = [
-  { name: 'React JS', },
-  { name: 'Node JS',  },
-  { name: 'HTML',  },
-  { name: 'JavaScript'},
-  { name: 'Tailwind CSS',},
-  { name: 'Redux', },
-  { name: 'MongoDB', },
-  { name: 'React Native', },
-  { name: 'Git', },
-   { name: 'SQLite DB',},
-  { name: 'Firebase', },
-  { name: 'jQuery',},
+  { name: 'React JS', icon : ReactJsIcon  },
+  { name: 'Node JS',  icon : NodeJSIcon },
+  { name: 'HTML',  icon : HtmlIcon },
+  { name: 'JavaScript',  icon : JavaScriptIcon},
+  { name: 'Tailwind CSS',  icon : TailwindIcon},
+  { name: 'Redux',  icon : ReduxIcon },
+  { name: 'MongoDB',  icon : MongoDB },
+  { name: 'React Native',  icon : ReactJsIcon},
+  { name: 'Git',  icon : GitHubIcon},
+  { name: 'SQLite DB',  icon : SqliteIcon},
 ];
 
 const Resume = () => {
@@ -25,7 +31,7 @@ const Resume = () => {
         
         <div className="space-y-8">
           <div class="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-            <p class="text-sm text-designColor tracking-[4px] text-[#00ff00]">Jan 2023 - Jan 2024</p>
+            <p class="text-sm text-designColor tracking-[4px] text-[#00ff00]">Jan 2023 - Jan 2025</p>
             <h2 class="text-3xl md:text-4xl font-bold">Job Experience</h2>
           </div>
           {/* Job Experience */}
@@ -59,9 +65,9 @@ const Resume = () => {
                 {skills.concat(skills).map((skill, index) => ( // Repeat skills for seamless scroll
                   <li 
                     key={index} 
-                    className="flex flex-col bg-gradient-to-tr p-6 items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                    className="flex text-base hover:text-[#00ff00] cursor-pointer flex-col bg-gradient-to-tr p-6 items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                     
-                    <GitHubIcon width="40" height="40" />  {/* Icon with specified size */}
+                    <skill.icon className='w-10 h-10' />  {/* Icon with specified size */}
                     <span className="font-bold mt-[24px] text-center  text-base w-[120px]">{skill.name}</span> {/* Title below the icon with 24px gap */}
                   </li>
                 ))}
