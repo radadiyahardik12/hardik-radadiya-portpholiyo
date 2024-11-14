@@ -20,19 +20,19 @@ const Contact = () => {
         </div>
         
         <div className="flex justify-center mt-6 space-x-6">
-          <a href="https://linkedin.com" className="text-gray-400 hover:text-blue-600">
+          <a href="https://linkedin.com" target='_blank' className="text-gray-400 hover:text-blue-600">
             {/* <FaLinkedin size={30} /> */}
             <LinkinIcon />
           </a>
-          <a href="https://github.com" className="text-gray-400 hover:text-gray-500">
+          <a href="https://www.linkedin.com/in/hardik-radadiya-61b30718b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className="text-gray-400 hover:text-gray-500">
             {/* <FaGithub size={30} /> */}
             <GitHubIcon />
           </a>
-          <a href="https://facebook.com" className="text-gray-400 hover:text-blue-600">
+          <a href="https://www.facebook.com/radadiya.hardik.986?mibextid=ZbWKwL" target='_blank' className="text-gray-400 hover:text-blue-600">
             {/* <FaFacebook size={30} /> */}
             <FaceBookIcon/>
           </a>
-          <a href="https://instagram.com" className="text-gray-400 hover:text-pink-500">
+          <a href="https://www.instagram.com/radadia_hardik_/profilecard/?igsh=MW5iOXVoZDI0ZXpiaA==" target='_blank' className="text-gray-400 hover:text-pink-500">
             {/* <FaInstagram size={30} /> */}
             <InstagramIcon />
           </a>

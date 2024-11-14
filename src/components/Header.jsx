@@ -1,10 +1,13 @@
 import React from 'react';
+import hlogo from '../images/hardikLogo.jpg'
 
 const Header = () => {
   return (
     <header className="bg-black text-white py-4 shadow-lg fixed w-full top-0 z-50 border-b-[1px]">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <div className="text-2xl font-extrabold text-gradient">My Logo</div>
+        <div className="text-2xl font-extrabold text-gradient">
+          <img src={hlogo} alt="" className='h-12 w-12' />
+        </div>
         <nav className="hidden md:flex space-x-4 items-center">
           {['Home', 'Features', 'Projects', 'Resume', 'Contact'].map((item) => (
             <a 

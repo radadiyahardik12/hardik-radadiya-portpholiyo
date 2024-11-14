@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className="bg-gradient-to-b from-black to-blue-900 min-h-screen">
+    <div className="bg-gradient-to-b from-black via-blue-900 to-black text-white min-h-screen">
       <Header />
       <main className="pt-20 text-white mx-auto">
         <Home />

@@ -5,7 +5,7 @@ const Features = () => {
     { title: 'UX Design', desc: "Blending the art of web development with the science of UX design, I specialize in creating websites that deliver a seamless user experience. Through thoughtful design and meticulous coding, I strive to create digital solutions that exceed expectations. Let's work together to build a website that not only looks beautiful but also engages your audience effectively." },
   ]
     return (
-      <section id="features" className=" py-16 bg-gradient-to-b from-black via-blue-900 to-black text-white">
+      <section id="features" className=" py-16 ">
         <div className="container mx-auto max-w-screen-xl  px-4 text-center">
           <div className="flex flex-col gap-4 font-titleFont mb-14">
             <span className="text-sm uppercase font-normal text-[#00ff00] tracking-wide"> Feature</span>
