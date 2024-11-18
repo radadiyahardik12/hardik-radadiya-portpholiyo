@@ -19,9 +19,9 @@ const Header = () => {
               {item}
             </a>
           ))}
-          <button className="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-full transition-transform duration-200 transform hover:scale-105 shadow-lg">
-            Download CV
-          </button>
+          <a href="https://vocab-connect.onrender.com/download/hardik/resume" className="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-full transition-transform duration-200 transform hover:scale-105 shadow-lg">
+          Download CV 
+          </a>
         </nav>
         <span onClick={() => setthreeDotsOpen(!threeDotsOpen)} class="text-xl md:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer">
         {threeDotsOpen ?
@@ -45,7 +45,7 @@ const Header = () => {
             </a>
           ))}
           <a 
-              href={`#`} 
+              href="https://vocab-connect.onrender.com/download/hardik/resume"
               className="hover:text-gray-300 transition duration-200 transform hover:scale-110">
               Download Cv
             </a>
