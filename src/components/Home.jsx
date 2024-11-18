@@ -3,7 +3,7 @@ import photo1 from '../images/photo1.jpg';
 
 const Home = () => {
   return (
-    <div className='px-4 h-fit pb-9'>
+    <div className='px-4 h-fit'>
       <div className='mx-auto max-w-screen-xl'>
         <section
           id="home"

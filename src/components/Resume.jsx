@@ -25,13 +25,13 @@ const skills = [
 
 const Resume = () => {
   return (
-    <section id="resume" className="py-16 px-3  text-white ">
+    <section id="resume" className=" pt-20 px-3  text-white ">
       <div className="container mx-auto max-w-screen-xl">
         <h2 className="text-4xl font-bold text-center mb-8 text-gradient">My Resume</h2>
         
         <div className="space-y-8">
           <div class="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-            <p class="text-sm text-designColor tracking-[4px] text-[#00ff00]">Jan 2023 - Jan 2025</p>
+            <p class="text-sm text-designColor tracking-[4px] text-[#00ff00]">March 2023 - Jan 2025</p>
             <h2 class="text-3xl md:text-4xl font-bold">Job Experience</h2>
           </div>
           {/* Job Experience */}
@@ -49,7 +49,7 @@ const Resume = () => {
             <h3 className="text-2xl font-semibold text-blue-300 mb-2">Web Developer & Trainee</h3>
             <p>Company: Octopus Technologies</p>
             <p>Location: Surat</p>
-            <p>Duration: Jan 2023 - Jun 2023</p>
+            <p>Duration: March 2023 - Jun 2023</p>
             <p className="mt-2 text-gray-400">
               Trained in JavaScript ES6, jQuery, Tailwind CSS, and React, and contributed to live projects.
             </p>

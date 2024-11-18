@@ -1,10 +1,12 @@
 import React from "react";
 import shoppingImage from '../images/shopping.png';
 import schoolImage from '../images/school.png';
+import DragImage from '../images/drag.png';
 import gurjarImage from '../images/gurjar.jpg';
 import khatushyamImage from '../images/khatushyam.jpg'; //
 import GitHubIcon from "../assets/GitHubIcon";
 import BrowserIcon from "../assets/BrowserIcon";
+import Expensive from "../images/expensive.png";
 
 const Projects = () => {
   const appList = [
@@ -15,16 +17,22 @@ const Projects = () => {
       url: "https://shopping-fronted.onrender.com"
     },
     {
-      title: "School App",
-      desc: "A responsive school website built with React, HTML, CSS, and JavaScript.",
-      img : schoolImage,
-      url: "https://myschool-s98u.onrender.com/"
+      title: "Manage Expenses calculation analyze",
+      desc: "User-friendly expense analysis any product based on",
+      img : Expensive,
+      url: "https://manage-expenses-calculate-analyxe.onrender.com"
     },
     {
       title: "Drag and Drop App",
       desc: "Interactive drag-and-drop application in React with smooth events.",
-      img : shoppingImage,
-      url: "https://shopping-fronted.onrender.com"
+      img : DragImage,
+      url: "https://drag-and-drop-react.onrender.com/"
+    },
+    {
+      title: "School App",
+      desc: "A responsive school website built with React, HTML, CSS, and JavaScript.",
+      img : schoolImage,
+      url: "https://my-school-app-f83o.onrender.com/"
     },
     {
       title: "KhatuShyam Status App",
@@ -40,7 +48,7 @@ const Projects = () => {
     },
   ] 
   return (
-    <section id="projects" className="py-16 text-white ">
+    <section id="projects" className="pt-20 text-white ">
       <div className="container  mx-auto max-w-screen-xl px-4 text-center">
         <h2 className="text-4xl font-bold mb-8 text-gradient">My Projects</h2>
         <div className="grid md:grid-cols-3 gap-8">
