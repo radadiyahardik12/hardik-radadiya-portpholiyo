@@ -64,7 +64,7 @@ const Projects = () => {
             <div class="w-full mt-5 flex flex-col  gap-6">
               <div>
                 <div class="flex items-center justify-between">
-                  <h3 class="text-base uppercase text-designColor font-normal">
+                  <h3 class="text-base text-start uppercase text-designColor font-normal">
                 {project.title}
                   </h3>
                   <div class="flex gap-2">

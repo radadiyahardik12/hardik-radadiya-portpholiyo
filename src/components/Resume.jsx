@@ -8,6 +8,7 @@ import NodeJSIcon from '../assets/NodeJSIcon';
 import ReduxIcon from '../assets/ReduxIcon';
 import JavaScriptIcon from '../assets/JavaScriptIcon';
 import SqliteIcon from '../assets/SqliteIcon';
+import Marquee from 'react-fast-marquee'
 // import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaDatabase, FaGit, FaJsSquare } from 'react-icons/fa';
 
 const skills = [
@@ -61,16 +62,17 @@ const Resume = () => {
             <p className="text-gray-400">I have developed expertise in the following technologies and tools:</p>
             
             <div className="relative my-8 overflow-hidden whitespace-nowrap">
-              <ul className="flex gap-20 animate-scroll">
+              <ul className="flex gap-20">
+              <Marquee direction='left' speed={50}>
                 {skills.concat(skills).map((skill, index) => ( // Repeat skills for seamless scroll
                   <li 
                     key={index} 
-                    className="flex text-base hover:text-[#00ff00] cursor-pointer flex-col bg-gradient-to-tr p-6 items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                    
+                    className="flex text-base hover:text-[#00ff00] mx-6 cursor-pointer flex-col bg-gradient-to-tr p-6 items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                     <skill.icon className='w-10 h-10' />  {/* Icon with specified size */}
                     <span className="font-bold mt-[24px] text-center  text-base w-[120px]">{skill.name}</span> {/* Title below the icon with 24px gap */}
                   </li>
                 ))}
+                </Marquee>
               </ul>
             </div>
           </div>
