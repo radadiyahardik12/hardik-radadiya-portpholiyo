@@ -1,42 +1,88 @@
+import React from 'react';
+
 const Features = () => {
   const futures = [
-    { title: 'SEO Optimization', desc: "With a keen eye for SEO optimization, I excel in crafting websites that not only look great but also rank high on search engines. From keyword research to on-page optimization, I leverage proven techniques to improve your website's visibility and drive targeted traffic. Let's collaborate to make your online presence stand out in today's competitive landscape." },
-    { title: 'Web Development', desc: "With expertise in HTML, CSS, JavaScript, and a range of web development frameworks, I bring visions to life on the digital landscape. Specializing in creating intuitive and responsive websites, I prioritize user experience and functionality. Whether it's crafting sleek designs or optimizing performance, I strive for excellence in every aspect of web development. Let's work together to transform your ideas into captivating online solutions that leave a lasting impression." },
-  ]
-    return (
-      <section id="features" className=" pt-20 ">
-        <div className="container mx-auto max-w-screen-xl  px-4 text-center">
-          <div className="flex flex-col gap-4 font-titleFont mb-14">
-            <span className="text-sm uppercase font-normal text-[#00ff00] tracking-wide"> Feature</span>
-            <h2 className="text-4xl md:text-5xl text-gray-300 font-bold capitalize">What I Do</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-20">
-            {futures.map((feature) => ( 
-              <div 
-                key={feature.title} 
-                className="w-full px-12 h-80 py-10 rounded-lg shadow-shadowOne flex items-center bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024] transition-colors duration-100 group">
-                  <div className="h-72 ">
-                    <div className="flex h-full flex-col gap-10 translate-y-16 group-hover:translate-y-0 transition-transform duration-500">
-                      {/* <div className="w-10 h-8 flex flex-col justify-between">
-                         <span className="text-5xl text-designColor"></span>
-                      </div> */}
-                      <div className="flex flex-col gap-6">
-                          <h2 className="text-xl md:text-2xl font-titleFont font-bold text-gray-300">{feature.title}</h2>
-                          <p className="base overflow-y-scroll text-clip scrollbar-hide h-24">{feature.desc}</p>
-                          <a  className="w-[15%]">
-                            <span className="text-2xl text-designColor"></span>
-                          </a>
+    { 
+      icon: (
+        <svg className="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 12h14M12 5l7 7-7 7" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10 20l4-16" />
+        </svg>
+      ),
+      title: 'Full Stack Development', 
+      desc: 'Developing scalable REST APIs and backend microservices using Node.js, Python, PHP, Express.js, and MongoDB/SQLite, seamlessly connected with dynamic web frontends.' 
+    },
+    { 
+      icon: (
+        <svg className="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+      ),
+      title: 'Mobile App Development', 
+      desc: 'Building high-performance cross-platform mobile applications with React Native and SQLite offline storage, published and maintained on the Google Play Store.' 
+    },
+    { 
+      icon: (
+        <svg className="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      ),
+      title: 'Frontend Engineering', 
+      desc: 'Crafting responsive, high-speed UI components using React.js, Next.js, Redux, and Tailwind CSS, focusing on reusability, modular architecture, and modern UX design.' 
+    },
+    { 
+      icon: (
+        <svg className="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      ),
+      title: 'SEO & Performance Optimization', 
+      desc: 'Optimizing web applications for search engine rankings, accessibility, and speed. Proven track record in diagnosing and resolving performance issues across 300+ web properties.' 
+    },
+  ];
 
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            ))}
-          </div>
+  return (
+    <section id="features" className="py-20 px-6 relative">
+      <div className="container mx-auto max-w-screen-xl">
+        
+        {/* Section Header */}
+        <div className="flex flex-col items-center text-center gap-3 mb-16">
+          <span className="text-xs uppercase font-semibold text-emerald-400 tracking-widest px-3.5 py-1 rounded-full glass-card border border-emerald-500/20">
+            Services & Expertise
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
+            What I Bring To The Table
+          </h2>
+          <p className="text-slate-400 max-w-xl text-sm sm:text-base">
+            End-to-end software development solutions built with modern technology stacks.
+          </p>
         </div>
-      </section>
-    );
-  };
-  
-  export default Features;
-  
+
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {futures.map((feature, idx) => (
+            <div 
+              key={idx} 
+              className="glass-card glass-card-hover p-8 rounded-2xl flex flex-col items-start gap-6 border border-slate-800/80 group"
+            >
+              <div className="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700/60 group-hover:bg-slate-800 transition-colors">
+                {feature.icon}
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+                  {feature.title}
+                </h3>
+                <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+                  {feature.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Features;
