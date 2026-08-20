@@ -9,7 +9,6 @@ import ReduxIcon from '../assets/ReduxIcon';
 import JavaScriptIcon from '../assets/JavaScriptIcon';
 import SqliteIcon from '../assets/SqliteIcon';
 import PythonIcon from '../assets/PythonIcon';
-import PhpIcon from '../assets/PhpIcon';
 import NextJsIcon from '../assets/NextJsIcon';
 import Marquee from 'react-fast-marquee';
 
@@ -18,7 +17,6 @@ const skills = [
   { name: 'Next.js', icon: NextJsIcon },
   { name: 'Node.js', icon: NodeJSIcon },
   { name: 'Python', icon: PythonIcon },
-  { name: 'PHP', icon: PhpIcon },
   { name: 'React Native', icon: ReactJsIcon },
   { name: 'JavaScript', icon: JavaScriptIcon },
   { name: 'Tailwind CSS', icon: TailwindIcon },
@@ -36,7 +34,7 @@ const experiences = [
     period: "Jan 2025 – Present",
     current: true,
     highlights: [
-      "Developed and maintained scalable REST APIs using Node.js, Python, and PHP for robust server-side performance.",
+      "Developed and maintained scalable REST APIs using Node.js and Python for robust server-side performance.",
       "Built interactive UI components with React.js, Next.js, and React Native emphasizing modular reusability and speed.",
       "Participated in database schema design & query optimization across MongoDB and SQLite for maximum reliability.",
       "Utilized Git version control best practices and agile sprint workflows for task estimation and delivery."
@@ -71,7 +69,7 @@ const Resume = () => {
   return (
     <section id="resume" className="py-20 px-6 relative">
       <div className="container mx-auto max-w-screen-xl">
-        
+
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-3 mb-16">
           <span className="text-xs uppercase font-semibold text-emerald-400 tracking-widest px-3.5 py-1 rounded-full glass-card border border-emerald-500/20">
@@ -87,7 +85,7 @@ const Resume = () => {
 
         {/* Timeline & Education Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
-          
+
           {/* Left 2 Cols: Experience Vertical Timeline */}
           <div className="lg:col-span-2 space-y-8">
             <h3 className="text-2xl font-bold text-white flex items-center gap-3">
@@ -99,11 +97,10 @@ const Resume = () => {
               {experiences.map((exp, idx) => (
                 <div key={idx} className="relative group">
                   {/* Timeline Node Icon */}
-                  <div className={`absolute -left-[33px] top-1.5 w-4 h-4 rounded-full border-2 ${
-                    exp.current 
-                      ? 'bg-emerald-500 border-emerald-300 ring-4 ring-emerald-500/20 animate-pulse' 
-                      : 'bg-slate-900 border-slate-700 group-hover:border-emerald-400'
-                  }`} />
+                  <div className={`absolute -left-[33px] top-1.5 w-4 h-4 rounded-full border-2 ${exp.current
+                    ? 'bg-emerald-500 border-emerald-300 ring-4 ring-emerald-500/20 animate-pulse'
+                    : 'bg-slate-900 border-slate-700 group-hover:border-emerald-400'
+                    }`} />
 
                   {/* Card Content */}
                   <div className="glass-card glass-card-hover p-6 rounded-2xl border border-slate-800/80 space-y-4">
@@ -116,11 +113,10 @@ const Resume = () => {
                           {exp.company} • <span className="text-slate-400 font-normal">{exp.location}</span>
                         </p>
                       </div>
-                      <span className={`px-3 py-1 rounded-full text-xs font-mono font-medium self-start sm:self-center ${
-                        exp.current 
-                          ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' 
-                          : 'bg-slate-800 text-slate-400 border border-slate-700/50'
-                      }`}>
+                      <span className={`px-3 py-1 rounded-full text-xs font-mono font-medium self-start sm:self-center ${exp.current
+                        ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
+                        : 'bg-slate-800 text-slate-400 border border-slate-700/50'
+                        }`}>
                         {exp.period}
                       </span>
                     </div>
@@ -170,7 +166,7 @@ const Resume = () => {
             <div className="glass-card p-6 rounded-2xl border border-slate-800/80 space-y-3">
               <h4 className="text-lg font-bold text-white">Core Competencies</h4>
               <div className="flex flex-wrap gap-2">
-                {['JavaScript (ES6+)', 'TypeScript', 'React.js', 'Next.js', 'React Native', 'Node.js', 'Python', 'PHP', 'Express.js', 'MongoDB', 'SQLite', 'Git'].map((skill, sIdx) => (
+                {['JavaScript (ES6+)', 'TypeScript', 'React.js', 'Next.js', 'React Native', 'Node.js', 'Python', 'Express.js', 'MongoDB', 'SQLite', 'Git'].map((skill, sIdx) => (
                   <span key={sIdx} className="px-2.5 py-1 rounded-lg bg-slate-800/90 text-slate-300 text-xs font-medium border border-slate-700/60">
                     {skill}
                   </span>
@@ -190,8 +186,8 @@ const Resume = () => {
           <div className="relative py-4 overflow-hidden rounded-2xl glass-card border border-slate-800/80">
             <Marquee direction="left" speed={45} pauseOnHover={true} gradient={false}>
               {skills.concat(skills).map((skill, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="flex flex-col items-center justify-center mx-8 my-2 p-4 rounded-xl hover:bg-slate-800/60 transition-all duration-300 cursor-pointer group"
                 >
                   <skill.icon className="w-10 h-10 group-hover:scale-110 transition-transform" />

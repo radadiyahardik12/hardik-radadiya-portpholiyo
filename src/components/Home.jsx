@@ -13,10 +13,10 @@ const Home = () => {
     <section id="home" className="pt-12 pb-16 px-6 relative">
       <div className="mx-auto max-w-screen-xl">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-16">
-          
+
           {/* Left Column: Bio & Info */}
           <div className="w-full lg:w-3/5 flex flex-col items-start gap-6">
-            
+
             {/* Availability Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-card border border-emerald-500/30 text-emerald-400 text-xs font-semibold tracking-wide uppercase">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
@@ -36,7 +36,7 @@ const Home = () => {
 
             {/* Paragraph Bio */}
             <p className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl">
-              Energetic Full Stack Developer with over 3.5+ years of professional experience building dynamic web and mobile applications. Proficient in <strong className="text-slate-200 font-semibold">React Native, Node.js, React.js, Next.js, Python, PHP, Redux, and Git</strong>. Delivered 20+ full-featured web applications and optimized over 300+ web properties.
+              Energetic Full Stack Developer with over 3.5+ years of professional experience building dynamic web and mobile applications. Proficient in <strong className="text-slate-200 font-semibold">React Native, Node.js, React.js, Next.js, Python, Redux, and Git</strong>. Delivered 20+ full-featured web applications and optimized over 300+ web properties.
             </p>
 
             {/* CTA Buttons */}
@@ -76,7 +76,7 @@ const Home = () => {
             <div className="relative group">
               {/* Glowing Background Halo */}
               <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-3xl blur-xl opacity-40 group-hover:opacity-75 transition duration-500 group-hover:duration-200" />
-              
+
               {/* Image Frame */}
               <div className="relative rounded-3xl overflow-hidden glass-card border border-slate-700/60 p-3 max-w-[340px] sm:max-w-[400px]">
                 <img
@@ -84,7 +84,7 @@ const Home = () => {
                   alt="Hardik Radadiya"
                   className="w-full h-[420px] sm:h-[480px] object-cover rounded-2xl filter saturate-105 group-hover:scale-105 transition-transform duration-500"
                 />
-                
+
                 {/* Float Badge */}
                 <div className="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-xl border border-slate-700/80 flex items-center gap-3 backdrop-blur-md">
                   <div className="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg">

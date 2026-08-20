@@ -6,15 +6,24 @@ import khatushyamImage from '../images/khatushyam.jpg';
 import GitHubIcon from "../assets/GitHubIcon";
 import BrowserIcon from "../assets/BrowserIcon";
 import Expensive from "../images/expensive.png";
+import dreemsandhu from "../images/dreemsandhu.png";
+import mydhatri from "../images/mydhatri.png"
 
 const Projects = () => {
   const appList = [
     {
-      title: "Dreems & HU Jobs Web App",
-      desc: "Full-stack job portal web app for job seekers and employers with job search/filtering, applicant management, and real-time email notifications.",
+      title: "My Dhatri Tech And Innovation",
+      desc: "Full-stack Company portal web app for company's employee and comany profile manager",
       tags: ["React.js", "Tailwind CSS", "Node.js", "MongoDB Cluster"],
-      img: shoppingImage,
-      url: "https://vocab-connect.onrender.com"
+      img: mydhatri,
+      url: "https://mydhatri.in/"
+    },
+    {
+      title: "Dreems & HU Jobs Web App",
+      desc: "Full-stack job portal web app for job seekers and employers with job Auto Post Linkedin, search/filtering, applicant management, and real-time email notifications.",
+      tags: ["React.js", "Tailwind CSS", "Node.js", "MongoDB Cluster"],
+      img: dreemsandhu,
+      url: "https://dreemsandhu.vercel.app/"
     },
     {
       title: "E-Commerce Shopping Web App",
@@ -44,19 +53,19 @@ const Projects = () => {
       img: schoolImage,
       url: "https://my-school-app-f83o.onrender.com/"
     },
-    {
-      title: "Android Status Apps (10+ Apps)",
-      desc: "Mobile applications engineered with React Native, powered by Node.js backend services and offline SQLite database caching for status management.",
-      tags: ["React Native", "Node.js", "SQLite", "Play Store"],
-      img: khatushyamImage,
-      url: "https://play.google.com/store/apps/details?id=com.khatulateststatus"
-    },
+    // {
+    //   title: "Android Status Apps (10+ Apps)",
+    //   desc: "Mobile applications engineered with React Native, powered by Node.js backend services and offline SQLite database caching for status management.",
+    //   tags: ["React Native", "Node.js", "SQLite", "Play Store"],
+    //   img: khatushyamImage,
+    //   url: "https://play.google.com/store/apps/details?id=com.khatulateststatus"
+    // },
   ];
 
   return (
     <section id="projects" className="py-20 px-6 relative">
       <div className="container mx-auto max-w-screen-xl">
-        
+
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-3 mb-16">
           <span className="text-xs uppercase font-semibold text-emerald-400 tracking-widest px-3.5 py-1 rounded-full glass-card border border-emerald-500/20">
@@ -73,8 +82,8 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {appList.map((project, i) => (
-            <div 
-              key={i} 
+            <div
+              key={i}
               className="glass-card glass-card-hover rounded-2xl overflow-hidden border border-slate-800/80 flex flex-col group"
             >
               {/* Image Preview Window */}
@@ -85,12 +94,12 @@ const Projects = () => {
                   alt={project.title}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80" />
-                
+
                 {/* Action Buttons Overlay */}
                 <div className="absolute top-4 right-4 flex gap-2">
-                  <a 
-                    href="https://github.com/radadiyahardik12" 
-                    target="_blank" 
+                  <a
+                    href="https://github.com/radadiyahardik12"
+                    target="_blank"
                     rel="noreferrer"
                     className="w-10 h-10 rounded-full glass-card bg-slate-900/90 text-slate-300 hover:text-emerald-400 border border-slate-700/80 flex items-center justify-center transition-colors shadow-lg"
                     title="View Source Code"
@@ -123,8 +132,8 @@ const Projects = () => {
                 {/* Tech Stack Pills */}
                 <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-800/60">
                   {project.tags.map((tag, tIdx) => (
-                    <span 
-                      key={tIdx} 
+                    <span
+                      key={tIdx}
                       className="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono font-medium border border-slate-700/50"
                     >
                       {tag}
