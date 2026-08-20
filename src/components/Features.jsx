@@ -10,7 +10,7 @@ const Features = () => {
         </svg>
       ),
       title: 'Full Stack Development',
-      desc: 'Developing scalable REST APIs and backend microservices using Node.js, Python, Express.js, and MongoDB/SQLite, seamlessly connected with dynamic web frontends.'
+      desc: 'Developing scalable REST APIs and backend microservices using Node.js, Python, Express.js, and MongoDB/SQL, seamlessly connected with dynamic web frontends.'
     },
     {
       icon: (

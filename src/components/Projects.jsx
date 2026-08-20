@@ -8,6 +8,11 @@ import BrowserIcon from "../assets/BrowserIcon";
 import Expensive from "../images/expensive.png";
 import dreemsandhu from "../images/dreemsandhu.png";
 import mydhatri from "../images/mydhatri.png"
+import mahadevapp from "../images/mahadev.jpg"
+import apnavideoapp from "../images/apnavideo.jpg"
+import youtubrapp from "../images/youtubapp.jpg"
+import motivation from "../images/motivation.jpg"
+
 
 const Projects = () => {
   const appList = [
@@ -54,13 +59,41 @@ const Projects = () => {
       img: DragImage,
       url: "https://drag-and-drop-react.onrender.com/"
     },
-    // {
-    //   title: "Android Status Apps (10+ Apps)",
-    //   desc: "Mobile applications engineered with React Native, powered by Node.js backend services and offline SQLite database caching for status management.",
-    //   tags: ["React Native", "Node.js", "SQLite", "Play Store"],
-    //   img: khatushyamImage,
-    //   url: "https://play.google.com/store/apps/details?id=com.khatulateststatus"
-    // },
+    {
+      title: "Khatushyam App",
+      desc: "Mobile application engineered with React Native, offering status management and sharing capabilities.",
+      tags: ["React Native", "Android", "Play Store"],
+      img: khatushyamImage,
+      url: "https://play.google.com/store/apps/details?id=com.khatulateststatus"
+    },
+    {
+      title: "Motivational App",
+      desc: "Daily quotes and motivation mobile application available on the Google Play Store.",
+      tags: ["React Native", "Android", "Play Store"],
+      img: motivation,
+      url: "https://play.google.com/store/apps/details?id=com.quotesmotivation"
+    },
+    {
+      title: "YouTube App",
+      desc: "Custom video discovery mobile application on the Google Play Store.",
+      tags: ["React Native", "Android", "Play Store"],
+      img: youtubrapp,
+      url: "https://play.google.com/store/apps/details?id=com.youtubenew"
+    },
+    {
+      title: "Video Player App",
+      desc: "Versatile video player application for Android devices with advanced playback features.",
+      tags: ["React Native", "Android", "Play Store"],
+      img: apnavideoapp,
+      url: "https://play.google.com/store/apps/details?id=com.apnavideos"
+    },
+    {
+      title: "Mahadev App",
+      desc: "Devotional mobile application featuring Mahadev status, images, and content.",
+      tags: ["React Native", "Android", "Play Store"],
+      img: mahadevapp,
+      url: "https://play.google.com/store/apps/details?id=com.mahadevmahakals"
+    }
   ];
 
   return (

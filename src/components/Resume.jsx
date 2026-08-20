@@ -166,7 +166,7 @@ const Resume = () => {
             <div className="glass-card p-6 rounded-2xl border border-slate-800/80 space-y-3">
               <h4 className="text-lg font-bold text-white">Core Competencies</h4>
               <div className="flex flex-wrap gap-2">
-                {['JavaScript (ES6+)', 'TypeScript', 'React.js', 'Next.js', 'React Native', 'Node.js', 'Python', 'Express.js', 'MongoDB', 'SQLite', 'Git'].map((skill, sIdx) => (
+                {['JavaScript (ES6+)', 'TypeScript', 'React.js', 'Next.js', 'React Native', 'Node.js', 'Python', 'Express.js', 'MongoDB', 'SQL', 'SQLite', 'Git'].map((skill, sIdx) => (
                   <span key={sIdx} className="px-2.5 py-1 rounded-lg bg-slate-800/90 text-slate-300 text-xs font-medium border border-slate-700/60">
                     {skill}
                   </span>
