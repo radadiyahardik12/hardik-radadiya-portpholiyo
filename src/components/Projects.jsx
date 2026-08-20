@@ -12,6 +12,14 @@ import mydhatri from "../images/mydhatri.png"
 const Projects = () => {
   const appList = [
     {
+      title: "CorpRite Ai",
+      desc: "CorpRite provides a single source of truth for corporate records, equity, and governance. AI-powered onboarding transforms existing minute books into structured digital records, while integrated corporate actions, cap tables, and a verified audit log help legal teams manage corporate governance with greater accuracy and confidence.",
+      tags: ["React.js", "Node.js", "MongoDB Cluster", "Python", "Tailwind CSS", "Ai"],
+      img: 'https://corprite.co/video/landign-page.mp4',
+      url: "https://corprite.co/"
+
+    },
+    {
       title: "My Dhatri Tech And Innovation",
       desc: "Full-stack Company portal web app for company's employee and comany profile manager",
       tags: ["React.js", "Tailwind CSS", "Node.js", "MongoDB Cluster"],
@@ -45,13 +53,6 @@ const Projects = () => {
       tags: ["React.js", "JavaScript ES6+", "CSS3", "DOM Events"],
       img: DragImage,
       url: "https://drag-and-drop-react.onrender.com/"
-    },
-    {
-      title: "School Web Application",
-      desc: "Clean and responsive school web app built with Tailwind CSS, designed with structured navigation and accessibility for students and faculty.",
-      tags: ["React.js", "Tailwind CSS", "HTML5", "JavaScript"],
-      img: schoolImage,
-      url: "https://my-school-app-f83o.onrender.com/"
     },
     // {
     //   title: "Android Status Apps (10+ Apps)",
@@ -88,11 +89,23 @@ const Projects = () => {
             >
               {/* Image Preview Window */}
               <div className="relative w-full h-56 bg-slate-950 overflow-hidden border-b border-slate-800/80">
-                <img
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  src={project.img}
-                  alt={project.title}
-                />
+                {
+                  project.img.includes(".mp4") ? (
+                    <video
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      src={project.img}
+                      autoPlay
+                      loop
+                      muted
+                    />
+                  ) : (
+                    <img
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      src={project.img}
+                      alt={project.title}
+                    />
+                  )
+                }
                 <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80" />
 
                 {/* Action Buttons Overlay */}
