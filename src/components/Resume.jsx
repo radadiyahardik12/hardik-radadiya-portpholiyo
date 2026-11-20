@@ -28,11 +28,23 @@ const skills = [
 
 const experiences = [
   {
+    role: "Founder & Freelance Full Stack Developer",
+    company: "My Dhatri Tech And Innovation",
+    location: "Rajkot, Gujarat",
+    period: "Jan 2026 – Present",
+    current: true,
+    highlights: [
+      "Leading end-to-end software development and client consulting, delivering modern full-stack web and mobile applications.",
+      "Architecting scalable frontend and backend systems using React.js, Next.js, Node.js, Python, and MongoDB.",
+      "Building customized business solutions, RESTful API integrations, and database architectures optimized for performance and reliability."
+    ]
+  },
+  {
     role: "Full Stack Developer",
     company: "Cloudpeak Technologies Pvt Ltd",
     location: "Rajkot, Gujarat",
-    period: "Jan 2025 – Present",
-    current: true,
+    period: "Jan 2025 – Jan 2026",
+    current: false,
     highlights: [
       "Developed and maintained scalable REST APIs using Node.js and Python for robust server-side performance.",
       "Built interactive UI components with React.js, Next.js, and React Native emphasizing modular reusability and speed.",
